@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator Switch Case</title>
+    <script language="javascript" type="text/javascript">
+      function kalkulator(operation){
+        var bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+        var bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+        var total;
+        if(isNaN(bilangan1) || isNaN(bilangan2)){
+          alert("Inputan Salah!!");
+        }
+        switch(operation){
+          case 1:
+            total = bilangan1+bilangan2;
+            break;
+          case 2:
+            total = bilangan1-bilangan2;
+            break;
+          case 3:
+            total = bilangan1*bilangan2;
+            break;
+          case 4:
+            total = bilangan1/bilangan2;
+            break;
+        }
+      document.getElementById("hasil").value = total;
+      }
+    </script>
+    <style>
+      *{
+        margin:0;
+        padding:0;
+        background-color:#BBDEFB;
+      }
+      .button{
+        width:50px;
+        height:50px;
+        margin:2px;
+        font-size:25px;
+        cursor:pointer;
+        border-radius:10px;
+        background-color:white;
+      }
+      .textview{
+        width:210px;
+        margin:2px;
+        font-size:20px;
+        padding:5px;
+        border-radius:10px;
+        background-color:white;
+      }
+      .main{
+        position:absolute;
+        top:30%;
+        left:50%;
+        transform:translateX(-50%) translateY(-50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+    <h2 id="judul" style="text-align:center;">Calculator Switch Case</h2> 
+      <table>
+        <tr>
+          <td><h3>Masukkan Bilangan 1</td>
+          <td colspan="3">
+            <input class="textview"type="number"id="bilangan1"style="text-align:center;">
+          </td>
+        </tr>
+        <tr>
+          <td><h3>Masukkan Bilangan 2</td>
+          <td colspan="3">
+            <input class="textview"type="number"id="bilangan2"style="text-align:center;">
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><button class="button" onclick="return kalkulator(1)">+</button></td>
+          <td><button class="button" onclick="return kalkulator(2)">-</button></td>
+          <td><button class="button" onclick="return kalkulator(3)">*</button></td>
+          <td><button class="button" onclick="return kalkulator(4)">/</button></td>
+        </tr>
+        <tr>
+          <td><h3>Hasil</td>
+          <td colspan="3">
+            <input readonly id="hasil"class="textview"type="text"style="text-align:center;">
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
