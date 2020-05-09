@@ -1,0 +1,130 @@
+<?php 
+    require 'function.php';
+
+    $_SESSION = [];
+    session_unset();
+    session_destroy();
+
+    header("Location: login.php");
+    exit;
+
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telkom University</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="kiri">
+        <section class="logo">
+            <img class="logo-1" src="./img/logo.png" height="170px" width="150px"/>
+        </section>
+        <section class="kiri-bawah">
+            <h3>ARTIKEL POPULER</h3>
+        </section>
+        <section class="kiri-bawah-1">
+            <a href="#" style="text-decoration: none;">
+                <h4>Desain Web</h4>
+            </a>
+        </section>
+        <section class="kiri-bawah-1">
+            <a href="#" style="text-decoration: none;">
+                <h4>HTML</h4>
+            </a>
+        </section>
+        <section class="kiri-bawah-1">
+            <a href="#" style="text-decoration: none;">
+                <h4>CSS</h4>
+            </a>
+        </section>
+        <section class="kiri-bawah-1">
+            <a href="#" style="text-decoration: none;">
+                <h4>Lain-lain</h4>
+            </a>
+        </section>
+        <section class="kiri-bawah-1">
+            <a href="logout.php" style="text-decoration: none;">
+                <h4>Logout</h4>
+            </a>
+        </section>
+    </div>
+    <div class="kanan">
+      <section class="navbar">
+            <ul>
+            <img class="logo-1" src="./img/logo1.png" height="100px" width="300px"/>
+                <li>
+                    <a href="kontak.php">
+                        <h3>KONTAK</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="pengajar.php">
+                        <h3>PENGAJAR</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="about.php">
+                        <h3>TENTANG</h3>
+                    </a>
+                </li>
+                <li>
+                    <a href="home.php">
+                        <h3>HOME</h3>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="content">
+            <div class="kotak">
+                <img src="./img/profil.jpg" style="width:200px">
+                <div class="container">
+                    <h3>NAMA </h3>
+                    <p style="font-size: 17px;">Prof. Dr. Adiwijaya, S.Si., M.Si.</p>
+                    <h3>NIDN</h3>
+                    <p style="font-size: 17px;">123456789</p>
+                </div>
+            </div>
+            <div class="kotak">
+                <img src="./img/profil1.jpg" style="width:200px">
+                <div class="container">
+                    <h3>NAMA </h3>
+                    <p style="font-size: 17px;">Dr. Dadan Rahadian, S.T., M.M.</p>
+                    <h3>NIDN</h3>
+                    <p style="font-size: 17px;">123456789</p>
+                </div>
+            </div>
+            <div class="kotak">
+                <img src="./img/profil2.jpg" style="width:200px">
+                <div class="container">
+                    <h3>NAMA </h3>
+                    <p style="font-size: 17px;">Dr. Rina Djunita Pasaribu, M.Eng.Sc., CPM</p>
+                    <h3>NIDN</h3>
+                    <p style="font-size: 17px;">123456789</p>
+                </div>
+            </div>
+            <div class="kotak">
+                <img src="./img/profil3.jpg" style="width:200px">
+                <div class="container">
+                    <h3>NAMA </h3>
+                    <p style="font-size: 17px;">Dr. Dida Diah Damajanti, S.T.,M.Eng.Sc.</p>
+                    <h3>NIDN</h3>
+                    <p style="font-size: 17px;">123456789</p>
+                </div>
+            </div>
+        </section>
+    </div>
+   <div class="footer">
+    <h3>TELKOM UNIVERSITY</h3>
+      <h4>Gedung Bangkit Telkom University</h4>
+      <h4>Jl. Telekomunikasi Terusan Buah Batu Indonesia 40257, Bandung , Indonesia</h4>
+      <h4>(022) 7566456</h4>
+      <h4>info@telkomuniversity.ac.id</h4>
+  </div>
+</body>
+</html>
